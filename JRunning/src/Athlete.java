@@ -1,33 +1,17 @@
 
-public class Athlete 
+public class Athlete extends Person
 {	
-	private String name;
-	private String lastname;
+
 	private String category;
 	private double record;
 	
 	public Athlete(String name, String lastname, String category, double record) 
 	{
-		super();
-		this.name = name;
-		this.lastname = lastname;
+		super(name, lastname);
 		this.category = category;
 		this.record = record;
 	}
 	
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getLastname() {
-		return lastname;
-	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
 	public String getCategory() {
 		return category;
 	}
