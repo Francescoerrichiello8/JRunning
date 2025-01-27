@@ -13,12 +13,6 @@ public class RaceManagment
 		Athlete atleta5 = new Athlete("Martina", "Visco", "Senior", 14.54);
 		Athlete atleta6 = new Athlete("Dario", "Masellone", "Junior", 18.88);
 		
-		Organizer orga1 = new Organizer("Mario", "Rossi");
-		Organizer orga2 = new Organizer("Julio", "Baptista");
-		
-		Race gara1 = new Race("Sprintino", 10, orga1);
-		Race gara2 = new Race("Ruzzolone in Discesa", 5, orga2);
-
 		ArrayList<Athlete> partecipanti1 = new ArrayList<Athlete>();
 		partecipanti1.add(atleta1);
 		partecipanti1.add(atleta2);
@@ -28,6 +22,13 @@ public class RaceManagment
 		partecipanti2.add(atleta4);
 		partecipanti2.add(atleta5);
 		partecipanti2.add(atleta6);
+		
+		
+		Organizer orga1 = new Organizer("Mario", "Rossi");
+		Organizer orga2 = new Organizer("Julio", "Baptista");
+		
+		Race gara1 = new Race("Sprintino", 10, orga1, partecipanti1);
+		Race gara2 = new Race("Ruzzolone in Discesa", 5, orga2, partecipanti2);
 		
 		double winnerTime1 = 1000;
 		String winner1A = null;

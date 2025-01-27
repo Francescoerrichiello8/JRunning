@@ -8,12 +8,15 @@ public class Race
 	private ArrayList<Athlete> partecipanti1;
 	private ArrayList<Athlete> partecipanti2;
 	
-	public Race(String name, int athleteMax, Organizer organizer) 
+	public Race(String name, int athleteMax, Organizer organizer, ArrayList<Athlete> partecipanti12) 
 	{
 		super();
 		this.name = name;
 		this.athleteMax = athleteMax;
 		this.organizer = organizer;
+		this.partecipanti1 = partecipanti12;
+		this.partecipanti2 = partecipanti12;
+		
 	}
 	
 	public String getName() {
